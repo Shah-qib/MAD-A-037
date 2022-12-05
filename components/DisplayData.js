@@ -1,15 +1,20 @@
-import { Text, View, StyleSheet, Image, Button, Pressable } from "react-native";
+import React from "react";
+import { Text, View, StyleSheet, Image, Button, Pressable, TouchableOpacity } from "react-native";
 import { useState } from "react";
 
 import PrimaryButton from "./ui/PrimaryButton";
 import Colors from "../constants/Colors";
 import IconButton from "./ui/IconButton";
+//import Sound from "react-native-sound" 
+import { Audio } from 'expo-av';
 
 
-function DisplayData({maxLength, data}) {
+function DisplayData({data}) {
+  
+  var count = (Object.keys(data).length) - 1;
   const [currentIndex, setCurrentIndex] = useState(0);
   const next = () => {
-    if (currentIndex == maxLength) {
+    if (currentIndex == count) {
       setCurrentIndex(0);
     } else {
       setCurrentIndex(() => currentIndex + 1);
@@ -22,9 +27,58 @@ function DisplayData({maxLength, data}) {
     }
   };
 
+  //Sound manager
+  const [sound, setSound] = React.useState();
+
+  async function playSound() {
+    console.log('Loading Sound');
+    
+    const { sound } = await Audio.Sound.createAsync( data[currentIndex].path
+    );
+    setSound(sound);
+
+    console.log('Playing Sound');
+    await sound.playAsync();
+  }
+
+  //image Sound 
+  async function playSoundImage() {
+    console.log('Loading Sound');
+    
+    const { sound } = await Audio.Sound.createAsync( data[currentIndex].imgAudio
+    );
+    setSound(sound);
+
+    console.log('Playing Sound');
+    await sound.playAsync();
+  }
+
+  React.useEffect(() => {
+    return sound
+      ? () => {
+          console.log('Unloading Sound');
+          sound.unloadAsync();
+        }
+      : undefined;
+  }, [sound]);
+
   return (
     <View style={styles.container}>
-      <View style={styles.imageConatiner}>
+
+      <Pressable 
+      style={styles.imageConatiner}
+      onPress={playSoundImage}>
+      <Image
+          // source={require(data[currentIndex].image)}
+          source={data[currentIndex].image}
+          style={styles.image}
+          resizeMode="contain"
+        />
+      </Pressable>
+
+
+      {/* <TouchableOpacity onPress={playSoundImage}>
+        <View style={styles.imageConatiner} >
         <Image
           // source={require(data[currentIndex].image)}
           source={data[currentIndex].image}
@@ -32,8 +86,11 @@ function DisplayData({maxLength, data}) {
           resizeMode="contain"
         />
       </View>
+      </TouchableOpacity> */}
       <View style={styles.textContainer} >
-          <PrimaryButton>{data[currentIndex].data}</PrimaryButton>
+          <PrimaryButton 
+          onPress={playSound}
+          >{data[currentIndex].data}</PrimaryButton>
       </View>
 
       <View style={styles.buttonsContainer}>

@@ -1,8 +1,10 @@
-import { Text,View, StyleSheet } from "react-native";
+import EnglishSpellingsData from "../../data/English-data/EnglishSpellingsData";
+import DisplayData from "../../components/DisplayData";
 
 function EnglishSpellingsScreen(){
-    return <View>
-        <Text>English Spellings</Text>
-    </View>
+
+    return (
+        <DisplayData data={EnglishSpellingsData}/>
+    )
 }
 export default EnglishSpellingsScreen;

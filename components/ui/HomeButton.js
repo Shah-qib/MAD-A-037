@@ -24,14 +24,14 @@ const styles = StyleSheet.create({
     borderRadius: 28,
     borderWidth: 2,
     borderColor: Colors.color2,
-    margin: 24,
+    margin: 20,
     overflow: "hidden",
   },
   buttonInnerContainer: {
     backgroundColor: Colors.color4,
     flexDirection: "row",
-    justifyContent: 'center',
-    paddingVertical: 8,
+    //justifyContent: 'center',
+    paddingVertical: 4,
     paddingHorizontal: 16,
     elevation: 2,
   },
@@ -39,14 +39,15 @@ const styles = StyleSheet.create({
     //because we can not apply that to view or pressable
     color: 'white',
     textAlign: "center",
-    fontSize: 28,
-    fontWeight: 'bold'
+    fontSize: 34,
+    fontWeight: 'bold',
+    paddingHorizontal:12
   },
   ImageContainer:{
     borderRadius: 6,
     marginHorizontal: 10,
-    height:40,
-    width:40
+    height:55,
+    width:55
   }
   
 });

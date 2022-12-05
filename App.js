@@ -25,7 +25,26 @@ import UrduSpellingsScreen from './screens/Urdu/UrduSpellingsScreen';
 import UrduTracingScreen from './screens/Urdu/UrduTracingScreen';
 import UrduMatchmakingScreen from './screens/Urdu/UrduMatchmakingScreen';
 import UrduTouchAlphabetScreen from './screens/Urdu/UrduTouchAlphabetScreen';
+
+import NumbersScreen from './screens/Maths/NumbersScreen';
+import AdditionScreen from './screens/Maths/AdditionScreen';
+import SubtractionScreen from './screens/Maths/SubtractionScreen';
+import NumberTracingScreen from './screens/Maths/NumberTracingScreen';
+import NumbersMatchMakingScreen from './screens/Maths/NumbersMatchmakingScreen';
+import TouchNumberScreen from './screens/Maths/TouchNumberScreen';
+
+import ColorsScreen from './screens/Art/ColorsScreen';
+import ShapesScreen from './screens/Art/ShapesScreen';
+import ShapesTracingScreen from './screens/Art/ShapesTracingScreen';
+import ShapesMatchmakingScreen from './screens/Art/ShapesMatchmakingScreen';
+import TouchColorScreen from './screens/Art/TouchColorScreen';
+import DrawingScreen from './screens/Art/DrawingScreen';
+import ColoringScreen from './screens/Art/ColoringScreen';
+
 import Colors from './constants/Colors';
+
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -69,6 +88,22 @@ export default function App() {
         <Stack.Screen name="UrduTracingScreen" component={UrduTracingScreen} options={{title: 'Urdu Tracing'}}/>
         <Stack.Screen name="UrduMatchmakingScreen" component={UrduMatchmakingScreen} options={{title: 'Urdu Matchmaking'}}/>
         <Stack.Screen name='UrduTouchAlphabetScreen' component={UrduTouchAlphabetScreen} options={{title: 'Touch Urdu Alphabet'}}/>
+
+        <Stack.Screen name="NumbersScreen" component={NumbersScreen} options={{title: 'Numbers'}}/>
+        <Stack.Screen name="AdditionScreen" component={AdditionScreen} options={{title: 'Addition'}}/>
+        <Stack.Screen name="SubtractionScreen" component={SubtractionScreen} options={{title: 'Subtraction'}}/>
+        <Stack.Screen name="NumberTracingScreen" component={NumberTracingScreen} options={{title: 'Number Tracing'}}/>
+        <Stack.Screen name="NumbersMatchmakingScreen" component={NumbersMatchMakingScreen} options={{title: 'Numbers Matchmaking'}}/>
+        <Stack.Screen name='TouchNumberScreen' component={TouchNumberScreen} options={{title: 'Touch Numbers'}}/>
+      
+        <Stack.Screen name="ShapesScreen" component={ShapesScreen} options={{title: 'Shapes'}}/>
+        <Stack.Screen name="ColorsScreen" component={ColorsScreen} options={{title: 'Colors'}}/>
+        <Stack.Screen name="ShapesTracingScreen" component={ShapesTracingScreen} options={{title: 'Shapes Tracing'}}/>
+        <Stack.Screen name="ShapesMatchmakingScreen" component={ShapesMatchmakingScreen} options={{title: 'Shapes Matchmaking'}}/>
+        <Stack.Screen name="TouchColorScreen" component={TouchColorScreen} options={{title: 'Touch Color'}}/>
+        <Stack.Screen name='DrawingScreen' component={DrawingScreen} options={{title: 'Drawing'}}/>
+        <Stack.Screen name="ColoringScreen" component={ColoringScreen} options={{title: 'Coloring'}}/>
+
       </Stack.Navigator>
     </NavigationContainer>
     </>

@@ -1,8 +1,10 @@
-import { Text,View, StyleSheet } from "react-native";
-
+import DisplayData from "../../components/DisplayData";
+import UrduSpellingsData from "../../data/Urdu-data/UrduSpellingsData";
 function UrduSpellingsScreen(){
-    return <View>
-        <Text>Urdu Spellings</Text>
-    </View>
+
+    return (
+      <DisplayData data={UrduSpellingsData}/>
+    )
+    
 }
 export default UrduSpellingsScreen;

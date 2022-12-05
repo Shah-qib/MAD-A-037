@@ -1,155 +1,269 @@
 const UrduAlphabetsData = [
     {
       name: "ا",
-      image: require("../../assets/images/UrduAlphabetsImages/A4.png"),
+      data: "ا",
+      image: require("../../assets/images/UrduAlphabetsImages/alif.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ب",
-      image: require("../../assets/images/UrduAlphabetsImages/be.png"),
+      data: "ب",
+      image: require("../../assets/images/UrduAlphabetsImages/baa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "پ",
-      image: require("../../assets/images/EnglishAlphabetsImages/C.png"),
+      data: "پ",
+      image: require("../../assets/images/UrduAlphabetsImages/paa1.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ت",
-      image: require("../../assets/images/EnglishAlphabetsImages/D.png"),
+      data: "ت",
+      image: require("../../assets/images/UrduAlphabetsImages/taa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ٹ",
-      image: require("../../assets/images/EnglishAlphabetsImages/E.png"),
+      data: "ٹ",
+      image: require("../../assets/images/UrduAlphabetsImages/thaa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ث",
-      image: require("../../assets/images/EnglishAlphabetsImages/F.png"),
+      data: "ث",
+      image: require("../../assets/images/UrduAlphabetsImages/saa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ج",
-      image: require("../../assets/images/EnglishAlphabetsImages/G.png"),
+      data: "ج",
+      image: require("../../assets/images/UrduAlphabetsImages/jeem.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "چ",
-      image: require("../../assets/images/EnglishAlphabetsImages/H.png"),
+      data: "چ",
+      image: require("../../assets/images/UrduAlphabetsImages/chaa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ح",
-      image: require("../../assets/images/EnglishAlphabetsImages/I.png"),
+      data: "ح",
+      image: require("../../assets/images/UrduAlphabetsImages/haa1.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "خ",
-      image: require("../../assets/images/EnglishAlphabetsImages/J.png"),
+      data: "خ",
+      image: require("../../assets/images/UrduAlphabetsImages/khaa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "د",
-      image: require("../../assets/images/EnglishAlphabetsImages/K.png"),
+      data: "د",
+      image: require("../../assets/images/UrduAlphabetsImages/daal.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ڈ",
-      image: require("../../assets/images/EnglishAlphabetsImages/L.png"),
+      data: "ڈ",
+      image: require("../../assets/images/UrduAlphabetsImages/dhall.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ذ",
-      image: require("../../assets/images/EnglishAlphabetsImages/M.png"),
+      data: "ذ",
+      image: require("../../assets/images/UrduAlphabetsImages/zall.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ر",
-      image: require("../../assets/images/EnglishAlphabetsImages/N.png"),
+      data: "ر",
+      image: require("../../assets/images/UrduAlphabetsImages/raa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ڑ",
-      image: require("../../assets/images/EnglishAlphabetsImages/O.png"),
+      data: "ڑ",
+      image: require("../../assets/images/UrduAlphabetsImages/rhaa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ز",
-      image: require("../../assets/images/EnglishAlphabetsImages/P.png"),
+      data: "ز",
+      image: require("../../assets/images/UrduAlphabetsImages/zaa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ژ",
-      image: require("../../assets/images/EnglishAlphabetsImages/Q.png"),
+      data: "ژ",
+      image: require("../../assets/images/UrduAlphabetsImages/jhaa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "س",
-      image: require("../../assets/images/EnglishAlphabetsImages/R.png"),
+      data: "س",
+      image: require("../../assets/images/UrduAlphabetsImages/senn.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ش",
-      image: require("../../assets/images/EnglishAlphabetsImages/S.png"),
+      data: "ش",
+      image: require("../../assets/images/UrduAlphabetsImages/sheen.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ص",
-      image: require("../../assets/images/EnglishAlphabetsImages/T.png"),
+      data: "ص",
+      image: require("../../assets/images/UrduAlphabetsImages/swad.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ض",
-      image: require("../../assets/images/EnglishAlphabetsImages/U.png"),
+      data: "ض",
+      image: require("../../assets/images/UrduAlphabetsImages/zwad.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ط",
-      image: require("../../assets/images/EnglishAlphabetsImages/V.png"),
+      data: "ط",
+      image: require("../../assets/images/UrduAlphabetsImages/thwa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3')
     },
     {
       name: "ظ",
-      image: require("../../assets/images/EnglishAlphabetsImages/W.png"),
+      data: "ظ",
+      image: require("../../assets/images/UrduAlphabetsImages/zwaa.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3'),
     },
     {
       name: "ع",
-      image: require("../../assets/images/EnglishAlphabetsImages/X.png"),
+      data: "ع",
+      image: require("../../assets/images/UrduAlphabetsImages/hain.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3'),
     },
     {
       name: "غ",
-      image: require("../../assets/images/EnglishAlphabetsImages/Y.png"),
+      data: "غ",
+      image: require("../../assets/images/UrduAlphabetsImages/ghain.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3'),
     },
     {
       name: "ف",
-      image: require("../../assets/images/EnglishAlphabetsImages/Z.png"),
+      data: "ف",
+      image: require("../../assets/images/UrduAlphabetsImages/paa2.png"),
+      imgAudio: require('../../Sounds/aForApple.mp3'),
+      path: require('../../Sounds/aForApple.mp3'),
     },
     {
         name: "ق",
-        image: require("../../assets/images/EnglishAlphabetsImages/X.png"),
+        data: "ق",
+        image: require("../../assets/images/UrduAlphabetsImages/qaf.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "ک",
-        image: require("../../assets/images/EnglishAlphabetsImages/Y.png"),
+        data: "ک",
+        image: require("../../assets/images/UrduAlphabetsImages/kaap.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "گ",
-        image: require("../../assets/images/EnglishAlphabetsImages/Z.png"),
+        data: "گ",
+        image: require("../../assets/images/UrduAlphabetsImages/ghaap.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "ل",
-        image: require("../../assets/images/EnglishAlphabetsImages/X.png"),
+        data: "ل",
+        image: require("../../assets/images/UrduAlphabetsImages/laam.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "م",
-        image: require("../../assets/images/EnglishAlphabetsImages/Y.png"),
+        data: "م",
+        image: require("../../assets/images/UrduAlphabetsImages/meem.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "ن",
-        image: require("../../assets/images/EnglishAlphabetsImages/Z.png"),
+        data: "ن",
+        image: require("../../assets/images/UrduAlphabetsImages/noon.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "و",
-        image: require("../../assets/images/EnglishAlphabetsImages/X.png"),
+        data: "و",
+        image: require("../../assets/images/UrduAlphabetsImages/woo.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "ہ",
-        image: require("../../assets/images/EnglishAlphabetsImages/Y.png"),
+        data: "ہ",
+        image: require("../../assets/images/UrduAlphabetsImages/haa2.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "ھ",
-        image: require("../../assets/images/EnglishAlphabetsImages/Z.png"),
+        data: "ھ",
+        image: require("../../assets/images/UrduAlphabetsImages/haa3.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "ء",
-        image: require("../../assets/images/EnglishAlphabetsImages/X.png"),
+        data: "ء",
+        image: require("../../assets/images/UrduAlphabetsImages/amza.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "ی",
-        image: require("../../assets/images/EnglishAlphabetsImages/Y.png"),
+        data: "ی",
+        image: require("../../assets/images/UrduAlphabetsImages/ya1.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
       {
         name: "ے",
-        image: require("../../assets/images/EnglishAlphabetsImages/Z.png"),
+        data: "ے",
+        image: require("../../assets/images/UrduAlphabetsImages/ya2.png"),
+        imgAudio: require('../../Sounds/aForApple.mp3'),
+        path: require('../../Sounds/aForApple.mp3'),
       },
   ];
   

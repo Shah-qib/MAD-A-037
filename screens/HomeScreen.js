@@ -30,12 +30,12 @@ function HomeScreen(){
     return <View style = {styles.ViewConatiner} >
         
         <Title>Home screen</Title>
-        <HomeButton imageUri={require('../assets/images/ABC.png')} onPress={learnEnglishHandler}>Learn English</HomeButton>
-        <HomeButton imageUri={require('../assets/images/colorABC.png')} onPress={learnUrduHandler}>Learn Urdu</HomeButton>
-        <HomeButton imageUri={require('../assets/images/Shapes.png')} onPress={learnMathsHandler}>Learn Maths</HomeButton>
-        <HomeButton imageUri={require('../assets/images/ABC.png')} onPress={learnArtHandler}>Learn Art</HomeButton>
-        <HomeButton imageUri={require('../assets/images/ABC.png')} onPress={rhymesHandler}>Rhymes</HomeButton>
-        <HomeButton imageUri={require('../assets/images/ABC.png')} onPress={ViewRecordsHandler}>View Records</HomeButton>
+        <HomeButton imageUri={require('../assets/images/Icons/abc.png')} onPress={learnEnglishHandler}>Learn English</HomeButton>
+        <HomeButton imageUri={require('../assets/images/Icons/urduAlphabet.png')} onPress={learnUrduHandler}>Learn Urdu</HomeButton>
+        <HomeButton imageUri={require('../assets/images/Icons/123.png')} onPress={learnMathsHandler}>Learn Maths</HomeButton>
+        <HomeButton imageUri={require('../assets/images//Icons/coloring.png')} onPress={learnArtHandler}>Learn Art</HomeButton>
+        <HomeButton imageUri={require('../assets/images/Icons/rhymes.png')} onPress={rhymesHandler}>Rhymes</HomeButton>
+        <HomeButton imageUri={require('../assets/images/Icons/viewRecords.png')} onPress={ViewRecordsHandler}>View Records</HomeButton>
     </View>
     
 }
