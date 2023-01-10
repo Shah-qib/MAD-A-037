@@ -1,24 +1,26 @@
 import { Text, View, Image, StyleSheet } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
-
+import { useEffect } from "react";
 import Colors from "../constants/Colors";
 import PrimaryButton from "../components/ui/PrimaryButton";
 import Title from "../components/ui/Title";
 import { useNavigation } from "@react-navigation/native";
 
-function WelcomeScreen(){
-    const navigation = useNavigation();
-    function startAppHandler(){
-        navigation.navigate("Home");
-    }
+function WelcomeScreen({navigation}){
+
+
+    useEffect (() => {
+        setTimeout(function(){
+            navigation.navigate('Home')
+        }, 3000)
+    });
 
     return <View style = {styles.rootContainer}>
-    <Title>Kids Learning</Title>
     <View style = {styles.imageContainer}>
-    <Image style= {styles.image} source={require('../assets/images/welcome.jpg')} />
+    <Image style= {styles.image} source={require('../assets/KLlogo.png')}/>
     </View>
     <Text style = {styles.summaryText}>Welcome to Kids learning. </Text>
-    <PrimaryButton onPress={startAppHandler} >Let's go!  <FontAwesome name="long-arrow-right" size={32} color="white" /> </PrimaryButton>
+    {/* <PrimaryButton onPress={startAppHandler} >Let's go!  <FontAwesome name="long-arrow-right" size={32} color="white" /> </PrimaryButton> */}
 </View>
 }
 
@@ -33,13 +35,9 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.primary,
     },
     imageContainer: {
-        width: 300, //400
+        width: 400,
         height: 300, //400
-        borderRadius: 150, //200 for circle, radius has to be half of width and height
-        borderWidth: 3,
-        borderColor: Colors.color2,
-        overflow: "hidden",
-        margin: 50,
+        marginBottom: 250,
     },
     image: {
         width: '100%',
@@ -49,7 +47,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         textAlign: 'center',
         marginBottom: 24,
-        color: Colors.secondary //'white'
+        color: Colors.color2 //'white'
     },
 
 })

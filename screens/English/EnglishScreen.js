@@ -24,7 +24,7 @@ function EnglishScreen({navigation}) {
     navigation.navigate("EnglishMatchmakingScreen");
   }
   function englishTouchAlphabetHandler() {
-    navigation.navigate("EnglishTouchAphabetScreen");
+    navigation.navigate("EnglishTouchAlphabetScreen");
   }
 
   return (

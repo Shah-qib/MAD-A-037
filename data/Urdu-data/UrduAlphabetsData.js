@@ -3,29 +3,29 @@ const UrduAlphabetsData = [
       name: "ا",
       data: "ا",
       image: require("../../assets/images/UrduAlphabetsImages/alif.png"),
-      imgAudio: require('../../Sounds/aForApple.mp3'),
-      path: require('../../Sounds/aForApple.mp3')
+      imgAudio: require('../../Sounds/UrduAlphabets/alif.mpeg'),
+      path: require('../../Sounds/UrduAlphabets/alif.mpeg'),
     },
     {
       name: "ب",
       data: "ب",
       image: require("../../assets/images/UrduAlphabetsImages/baa.png"),
-      imgAudio: require('../../Sounds/aForApple.mp3'),
-      path: require('../../Sounds/aForApple.mp3')
+      imgAudio: require('../../Sounds/UrduAlphabets/bee.mpeg'),
+      path: require('../../Sounds/UrduAlphabets/bee.mpeg'),
     },
     {
       name: "پ",
       data: "پ",
       image: require("../../assets/images/UrduAlphabetsImages/paa1.png"),
-      imgAudio: require('../../Sounds/aForApple.mp3'),
-      path: require('../../Sounds/aForApple.mp3')
+      imgAudio: require('../../Sounds/UrduAlphabets/pee.mpeg'),
+      path: require('../../Sounds/UrduAlphabets/pee.mpeg'),
     },
     {
       name: "ت",
       data: "ت",
       image: require("../../assets/images/UrduAlphabetsImages/taa.png"),
-      imgAudio: require('../../Sounds/aForApple.mp3'),
-      path: require('../../Sounds/aForApple.mp3')
+      imgAudio: require('../../Sounds/UrduAlphabets/tee.mpeg'),
+      path: require('../../Sounds/UrduAlphabets/tee.mpeg'),
     },
     {
       name: "ٹ",

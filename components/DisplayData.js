@@ -7,6 +7,7 @@ import Colors from "../constants/Colors";
 import IconButton from "./ui/IconButton";
 //import Sound from "react-native-sound" 
 import { Audio } from 'expo-av';
+//import { useTheme } from "@react-navigation/native";
 
 
 function DisplayData({data}) {
@@ -61,6 +62,7 @@ function DisplayData({data}) {
         }
       : undefined;
   }, [sound]);
+
 
   return (
     <View style={styles.container}>
